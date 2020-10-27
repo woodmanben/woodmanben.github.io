@@ -3,11 +3,6 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-
-h1 {
-    text-align: center;
-    margin: 10px;
-}
 a {
     text-align: center;
 }
@@ -137,4 +132,10 @@ p {
 .fa:hover {
     color: white;
     background-image: linear-gradient(to bottom right, #17fbff, #771cff);
+}
+
+#designed {
+    padding-right: 40px;
+    font-size: 12px;
+    color: grey;
 }
