@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 h1 {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     margin: 10px;
 }
 a {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
 }
 
-.about {
+p {
+
+}
+
+.col {
     padding: 10px 10%;
-    font-family: 'Poppins', sans-serif;
 }
 
 /* Add a black background color to the top navigation */
@@ -49,6 +54,54 @@ a {
 .topnav .right a {
     color: black;
     background-image: linear-gradient(to bottom right, #52ff7a, #17fbff);
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 45%;
+  padding: 15px;
+}
+
+.column img {
+    max-width: 400px;
+}
+
+@media (max-width: 900px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .column img {
+      display: none;
+  }
+  .column {
+    float: left;
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+.row {
+    padding: 20px 10%;
+    padding-bottom: 200px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  background-color: white;
+  border: 5px solid black;
+  color: black;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .footer {
