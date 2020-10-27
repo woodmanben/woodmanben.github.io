@@ -1,12 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    margin: 10px;
 }
-h3 {
+a {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    color: grey;
-    font-style: italic;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-image: linear-gradient(to bottom right, #17fbff, #771cff);
+  color: black;
+}
+
+.right {
+    float: right;
+}
+
+.topnav .right a {
+    color: black;
+    background-image: linear-gradient(to bottom right, #52ff7a, #17fbff);
 }
