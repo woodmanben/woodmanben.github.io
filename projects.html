@@ -6,16 +6,46 @@
     <meta name="Work I've done" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="scripts.js" defer></script> -->
 </head>
 <body>
-    <h1>Projects</h1>
     <div class="topnav">
-        <a href="/">About</a>
+        <a href="/">Ben Woodman</a>
         <a class="active" href="/projects.html">Projects</a>
         <a href="/contact">Contact</a>
         <div class="right">
-            <a href="#resume">Resume</a>
+            <a href="resume.pdf" target="_blank">Resume</a>
         </div>
+    </div>
+    <div class="projects">
+        <div class='row'>
+            <div class="column">
+                <img src="jacket.jpeg" alt="Rocket Engine" style="width:100%">
+            </div>
+            <div class='about column'>
+                <h1>Rocket Engine Analysis</h1>
+                 <p> Over the past six months I've developed a Python system that can design an rocket engine contour and regenerative cooling system based on desired thrust, conraction ratio and chamber pressure. I am actively using this codebase to create preliminary designs for a ~3000lb liquid rocket engine that aims to take a student built rocket to space.</p>
+            </div>
+        </div>
+        <div class='row bottom'>
+            <div class="column">
+                <img src="motor_case.png" alt="Motor Case" style="width:100%">
+            </div>
+            <div class='about column'>
+                <h1>Drone Testing</h1>
+                 <p>Some friends and I have been working on making a drone from scratch. I've designed a ducted fan housing for a motor as well as a stand to test it. Assembly and testing coming soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+      <p><a id='email' href="mailto:benwoodman@gatech.edu">benwoodman@gatech.edu</a> | (858) 208-7566</p>
+      <!-- Add font awesome icons -->
+      <a href="https://www.linkedin.com/in/woodman-ben" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/woodman_ben/" class="fa fa-instagram"></a>
+      <a href='https://github.com/woodmanben/woodmanben.github.io' id='designed' class="right">Designed & Built by Ben Woodman</a>
     </div>
 </body>
 </html>

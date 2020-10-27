@@ -8,7 +8,7 @@ a {
 }
 
 p {
-
+    font-size: 20px;
 }
 
 .col {
@@ -54,28 +54,33 @@ p {
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 45%;
-  padding: 15px;
+  width: 47%;
+  padding: 10px;
 }
 
 .column img {
-    max-width: 400px;
+    max-width: 500px;
+    border-radius: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
-  .column img {
-      display: none;
-  }
   .column {
-    float: left;
-    width: 90%;
+    margin: auto;
+    width: 100%;
     padding: 15px;
+  }
+  .column img {
+      max-width: 95%;
   }
 }
 
 .row {
     padding: 20px 10%;
+    padding-bottom: 200px;
+}
+
+.projects {
     padding-bottom: 200px;
 }
 
@@ -99,6 +104,10 @@ p {
   cursor: pointer;
 }
 
+.buttons {
+    text-align: center;
+}
+
 .footer {
   position: fixed;
   left: 0;
@@ -107,6 +116,7 @@ p {
   background-color: black;
   color: white;
   padding: 15px;
+  padding-top: 0px;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
 }
@@ -138,4 +148,8 @@ p {
     padding-right: 40px;
     font-size: 12px;
     color: grey;
+}
+
+#profile {
+    border-radius: 50%;
 }
